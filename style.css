@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background-color: #121212;
+}
+
+a {
+    color: #eee;
+}
+
+/* ESTILO DO CONTAINER */
+
+#login-container {
+    background-color: #121212;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    text-align: center;
+    color: #eee;
+}
+
+/* FORMULÁRIO */
+
+form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+input {
+    border-bottom: 2px solid #eee;
+    padding: 10px;
+    font-size: 15px;
+    color: #eee;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input.invalid {
+    border-bottom: 2px solid red;
+}
+
+#forgot-pass {
+    text-align: right;
+    display: block;
+    font-size: 13px;
+}
+
+button {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: #eee;
+    background-color: #2121bb;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #121275;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: red;
+    display: none;
+}
+
+/* ANIMAÇÃO DO FORMULÁRIO */
+
+form {
+    animation-name: suave;
+    animation-duration: 0.8s;
+}
+
+@keyframes suave {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* REMOVE FORMULÁRIO DA TELA AO CLICAR NO BOTÃO */
+
+form {
+    transition: all 0.5s ease;
+}
+
+.oculta-form {
+    animation: top 0.5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes top {
+    from {
+        transform: translateY(0);    
+    }
+
+    to {
+        transform: translateY(-100vh);
+    }
+}
