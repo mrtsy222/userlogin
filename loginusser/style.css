@@ -81,7 +81,7 @@ button {
     border-radius: 10px;
     margin-top: 30px;
     color: #eee;
-    background-image:linear-gradient(to right, #121275, #490f80);
+    background-image:linear-gradient(to right, #0000c0, #6300c0);
     cursor: pointer;
     transition: 0.3s ease;
 }
